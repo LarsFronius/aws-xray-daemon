@@ -1,4 +1,5 @@
 echo "Starting xray daemon"
+chown xray /etc/amazon/xray/cfg.yaml
 initSystem=$(cat /proc/1/comm)
 if [ $initSystem = init ]
 then
